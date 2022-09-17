@@ -1,0 +1,427 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+
+### Neutral
+
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
+- Weights: 400, 600
+
+## Icons
+
+For the social icons, you can use the SVGs provided or a font icon library. Some font icon library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+*/
+
+/* --- GENERAL --- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Bai Jamjuree', sans-serif;
+  background-image: url("./images/bg-header-desktop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+  display: inline-block;
+  width: 630px;
+  margin-bottom: 50px;
+}
+
+h1, h2, h3 {
+  color: hsl(210, 10%, 33%);
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 100px;
+}
+
+.header-section, .first-section, .second-section, .third-section, .fourth-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- BUTTON --- */
+
+.button {
+  display: inline-block;
+}
+
+.button-ios, .button-mac  {
+  color: white;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  padding: 13px 40px;
+}
+
+.button-ios {
+  background: hsl(171, 66%, 44%);
+  margin-right: 5px;
+  box-shadow: 0px 12px 37px 5px rgba(56,168,151,0.29);
+}
+
+.button-mac {
+  background: hsl(233, 100%, 69%);
+  margin-left: 5px;
+  box-shadow: 0px 12px 37px 5px rgba(97,115,255,0.29)
+}
+
+.button-ios:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.button-mac:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* --- HEADER SECTION --- */
+
+.header-section p {
+  margin-bottom: 30px;
+}
+
+.header-section img {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+/* --- FIRTS SECTION --- */
+
+.first-section-container-flex h3 {
+  width: 350px;
+  text-align: left;
+  font-size: 18px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.first-section-container-flex p {
+  width: 350px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.first-section-container-flex img {
+  margin-left: -15vw;
+}
+
+/* --- SECOND SECTION --- */
+
+.second-section img {
+  width: 60vw;
+}
+
+/* --- THIRD SECTION --- */
+
+.third-section h2 {
+  margin-top: 10px;
+}
+
+.third-section-container-flex h3 {
+  width: 270px;
+  text-align: center;
+  font-size: 18px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.third-section-container-flex p {
+  width: 270px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.third-section-container-flex img {
+  display: block;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+}
+
+/* --- FOURTH SECTION --- */
+
+.fourth-section button {
+  margin-bottom: 100px;
+}
+
+
+
+/* --- FOOTER --- */
+
+footer {
+  background-color: #F9F9F9;
+}
+
+.fa-brands {
+  color: hsl(210, 10%, 33%);
+  padding: 10px;
+}
+
+.fontawesome, .page-logo-bottom, .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-brands:hover {
+  color: hsl(171, 66%, 44%);
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.page-logo-bottom img {
+  width: 20%;
+  margin: 30px;
+}
+
+.links {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+
+}
+
+.link {
+  color: hsl(210, 10%, 33%);
+  text-decoration: none;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.link:hover {
+  color: hsl(171, 66%, 44%);
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.links-lev-two {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+
+}
+
+.attribution {
+font-size: 11px;
+text-align: center;
+margin: 10px 0;
+}
+
+.attribution a {
+  color: hsl(210, 10%, 33%);
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  /* --- GENERAL --- */
+
+  body {
+    background-image: url("./images/bg-header-mobile.png");
+  }
+
+  h1, h2, p {
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+    margin-top: 100px;
+  }
+
+  /* --- BUTTON --- */
+
+
+  .button-ios, .button-mac  {
+    padding: 13px 90px;
+    display: block;
+    margin: 20px auto;
+  }
+
+  /* --- HEADER SECTION --- */
+
+
+  /* --- FIRTS SECTION --- */
+
+  .first-section-container-flex-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .first-section-container-flex h3 {
+    width: 320px;
+    text-align: center;
+    font-size: 25px;
+    margin: 50px 0 20px 0;
+  }
+
+  .first-section-container-flex p {
+    width: 320px;
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .first-section-container-flex img {
+    margin-left: 0;
+    width: 70vw;
+  }
+
+
+  /* --- SECOND SECTION --- */
+
+  .second-section img {
+    width: 70vw;
+  }
+
+  /* --- THIRD SECTION --- */
+
+  .third-section-container-flex-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .third-section h2 {
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+
+  .third-section-container-flex h3 {
+    width: 320px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .third-section-container-flex p {
+    width: 320px;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .third-section-container-flex img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo img {
+    margin: 30px;
+  }
+
+  /* --- FOURTH SECTION --- */
+
+  .fourth-section button {
+    margin-bottom: 20px;
+  }
+
+  .fourth-section .button-mac {
+    margin-bottom: 100px;
+  }
+
+  /* --- FOOTER --- */
+
+
+.page-logo-bottom, .links, .fontawesome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page-logo-bottom img {
+    width: 10vw;
+    margin: 30px 0 0 0;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .links-lev-two {
+    margin-right: 0px;
+  }
+
+  .fontawesome {
+    margin: 20px 0;
+  }
+
+}
